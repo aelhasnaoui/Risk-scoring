@@ -113,14 +113,15 @@ Because trips vary in length and context, core indicators are normalized:
 ## Trip Risk Score (0–100)
 
 ### Weighted Risk Formula
+
 Trip risk is computed as a weighted combination of speeding severity, harsh driving behavior, and frequency of violations:
 
-$$
+```math
 \text{RiskScore}_{raw} =
 0.45 \cdot \text{SpeedPenaltyNorm}
 + 0.35 \cdot \text{PenaltyNorm}
 + 0.20 \cdot \text{ViolationsNorm}
-$$
+
 
 We then rescale `RiskScore_raw` to a **0–100** score.
 
