@@ -118,10 +118,7 @@ Trip risk is computed as a weighted combination of speeding severity, harsh driv
 
 $$
 \text{RiskScore} =
-0.45 \cdot \text{SpeedPenaltyNorm}
-+ 0.35 \cdot \text{PenaltyNorm}
-+ 0.20 \cdot \text{ViolationsNorm}
-$$
+0.45 \cdot \text{SpeedPenaltyNorm} + 0.35 \cdot \text{PenaltyNorm} + 0.20 \cdot \text{ViolationsNorm} $$
 
 We then rescale `RiskScore_raw` to a **0–100** score.
 
